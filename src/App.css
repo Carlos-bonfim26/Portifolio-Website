@@ -1,0 +1,33 @@
+.container-home{
+  background-color: var(--background);
+  width: 100%;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  font-family: "Audiowide", sans-serif;
+}
+.container-home h1{
+  color: var(--details1);
+  font-size: 3rem;
+}
+.container-home h2{
+  color: var(--text-color);
+}
+.container-home .icons{
+margin-top: 1.5rem;
+display: flex;
+gap: 1rem;
+align-items: center;
+}
+.container-home .icons a{
+  font-size: 2.5rem;
+  color: var(--text-color);
+  transition: 0.3s ease-in-out;
+}
+.container-home .icons a:hover{
+  font-size: 2.9rem;
+  color: var(--details2);
+}

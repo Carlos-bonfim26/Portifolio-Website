@@ -1,0 +1,14 @@
+.navbar{
+    background-color: var(--background);
+}
+.nav-item{
+     font-family: "Audiowide", sans-serif;
+     margin-right: 0.5rem;
+}
+.nav-link{
+     color: var(--text-color);
+     transition: 0.3s ease-in-out;
+}
+.nav-link:hover{
+    color: var(--details1);
+}
