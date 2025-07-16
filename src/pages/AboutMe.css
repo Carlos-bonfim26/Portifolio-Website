@@ -1,0 +1,75 @@
+.container-about {
+  background-color: var(--background);
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1.5fr;
+}
+.img-about img {
+  height: 35rem;
+  width: auto;
+  z-index: 1;
+  position: relative;
+}
+.text-about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.text-about p {
+  text-align: justify;
+  color: var(--text-color);
+  opacity: 0.8;
+  z-index: 1;
+  width: 85%;
+}
+.text-about h2 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-family: "Audiowide", sans-serif;
+  z-index: 1;
+}
+.text-about span {
+  color: var(--details1);
+}
+.text-about .rectangle {
+  width: 3rem;
+  height: 8rem;
+  background-color: var(--details1);
+  left: 100;
+  right: 0;
+  top: 150%;
+  z-index: 0;
+  bottom: 0%;
+  position: absolute;
+}
+.text-about .border-rectangle {
+  position: absolute;
+  width: 3rem;
+  height: 5rem;
+  border: 0.2rem solid var(--details2);
+  opacity: 0.7;
+  z-index: 0;
+  bottom: -22%;
+}
+.img-about .rectangle {
+  width: 5rem;
+  height: 14rem;
+  top: 140%;
+  left: 10%;
+  position: absolute;
+  background-color: var(--details1);
+  z-index: 0;
+}
+.img-about .border-rectangle {
+  width: 4rem;
+  height: 12rem;
+  top: 147%;
+  left: 8%;
+  position: absolute;
+  z-index: 0;
+  border: 0.2rem solid var(--details2);
+  opacity: 0.7;
+}
