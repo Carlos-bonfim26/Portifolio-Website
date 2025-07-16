@@ -1,0 +1,14 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Config root */
+:root{
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  --background:#1C1D22;
+  --text-color:#D9D9D9;
+  --details1:#7011A7;
+  --details2:#40434F;
+  --demoday:#0482F1;
+}
+/*  font-family: "Audiowide", sans-serif; */
