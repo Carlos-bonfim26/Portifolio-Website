@@ -1,12 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import img from '../img/carlosbonfim.png'
+import imgResponsiva from '../img/PerfilCarlosBonfim.png'
 import './AboutMe.css'
 const AboutMe = () => {
+
+  const [imageSrc, setImageSrc] = useState("");
+
+  const handleResize = ()=>{
+    const width = window.innerWidth;
+
+    if(width <= 610){
+      setImageSrc(imgResponsiva);
+    }else{
+      setImageSrc(img);
+    }
+  };
+  useEffect(()=>{
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return ()=>{
+      window.removeEventListener("resize", handleResize)
+    }
+  }, []);
+
   return (
     <div className='container-about'>
       <div className="img-about">
         
-        <img src={img} alt="Carlos Bonfim" />
+        <img src={imageSrc} alt="Carlos Bonfim" />
         <div className="border-rectangle"></div>
          <div className="rectangle"></div>
       </div>

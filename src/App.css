@@ -31,3 +31,8 @@ align-items: center;
   font-size: 2.9rem;
   color: var(--details2);
 }
+@media (width <= 380px){
+  .container-home h1{
+    font-size: 2.3rem;
+  }
+}
