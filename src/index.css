@@ -12,6 +12,12 @@
   --demoday:#0482F1;
 }
 /*  font-family: "Audiowide", sans-serif; */
+h2{
+  font-family: "Audiowide", sans-serif;
+}
 h2 > span{
   color: var(--details1);
+}
+body{
+  background-color: var(--background);
 }
