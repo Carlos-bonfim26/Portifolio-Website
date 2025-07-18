@@ -31,11 +31,7 @@
   font-size: 2.9rem;
   color: var(--details2);
 }
-@media (width <= 380px) {
-  .container-home h1 {
-    font-size: 2.3rem;
-  }
-}
+
 .container-demoday {
   min-height: 100vh;
   width: 100%;
@@ -118,6 +114,69 @@
   transform: translateY(130%) translateX(-50%);
   z-index: 0;
 }
+.main-project img {
+  width: 24rem;
+  height: 14rem;
+  border-radius: 0.5rem;
+}
+.main-project {
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 24rem;
+  text-align: justify;
+  color: var(--text-color);
+}
+.main-project h3 {
+  font-family: "Audiowide", sans-serif;
+}
+.main-project button{
+  border: none;
+  border-radius: 0.5rem;
+  width: 6rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--background);
+  font-weight: 500;
+  box-shadow: 0.5rem 0.5rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease-in;
+}
+.main-project button:hover{
+background-color: #000;
+color: var(--text-color);
+ box-shadow: 0rem 0rem 1rem 0rem rgba(255, 255, 255, 0.2);
+}
+.main-project a{
+  text-decoration: none;
+}
+.main-project div {
+  gap: 0.3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}.main-projects h3{
+  text-align: left;
+}
+.main-projects{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem  0.6rem;
+}
+.container-projects{
+margin-top: 1rem;
+  display: grid;
+  align-items: flex-start;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
 @media (max-width: 1250px) {
   .img-demoday img {
     height: auto;
@@ -142,22 +201,25 @@
   .img-demoday img {
     width: 40rem;
   }
-  .enfeite{
+  .enfeite {
     display: none;
   }
 }
-@media (max-width: 670px){
+@media (max-width: 670px) {
   .img-demoday img {
     width: 30rem;
   }
 }
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .img-demoday img {
     width: 22rem;
   }
 }
-@media (max-width: 350px){
+@media (width <= 380px) {
   .img-demoday img {
     width: 18rem;
+  }
+  .container-home h1 {
+    font-size: 2.3rem;
   }
 }
