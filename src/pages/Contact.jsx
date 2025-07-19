@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import contatoImg from '../img/contact.svg'
-const Contact = () => {
+const Contact = forwardRef((props, ref) => {
   return (
-    <div className='contact'>
+    <div className='contact' ref={ref}>
       <h2>Entre em <span>contato</span></h2>
       <div className="container-contact">
         <div className="links">
@@ -14,6 +14,6 @@ const Contact = () => {
       </div>
     </div>
   )
-}
+})
 
 export default Contact

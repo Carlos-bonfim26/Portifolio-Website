@@ -1,32 +1,44 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import './Header.css'
-const Header = () => {
+import "./Header.css";
+const Header = ({
+  onScrollToSobre,
+  onScrollToHabilidades,
+  onScrollToProjetos,
+  onScrollToContato,
+  onScrollToDemoday,
+}) => {
   return (
     <div>
       <Navbar expand="lg" className="navbar">
         <Container className="justify-content-end">
-          <Navbar.Toggle aria-controls="basic-navbar-nav" data-bs-theme="dark"/>
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            data-bs-theme="dark"
+          />
           <Navbar.Collapse
             id="basic-navbar-nav"
             className="justify-content-end"
           >
-            <Nav  >
+            <Nav>
               <Nav.Item>
-                <Nav.Link >Home</Nav.Link>
+                <Nav.Link>Home</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-1">Sobre Mim</Nav.Link>
+                <Nav.Link onClick={onScrollToSobre}>Sobre Mim</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-2">Habilidades</Nav.Link>
+                <Nav.Link onClick={onScrollToHabilidades}>Habilidades</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-3">Projetos</Nav.Link>
+                <Nav.Link onClick={onScrollToDemoday}>Demoday</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-4">Contato</Nav.Link>
+                <Nav.Link onClick={onScrollToProjetos}>Projetos</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link onClick={onScrollToContato}>Contato</Nav.Link>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>

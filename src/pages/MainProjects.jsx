@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import MainProject from "../Components/MainProject";
 import "../App.css";
 //image
@@ -16,7 +16,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-const MainProjects = () => {
+const MainProjects = forwardRef((props, ref) => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 1250);
 
   useEffect(() => {
@@ -80,7 +80,7 @@ const MainProjects = () => {
     },
   ];
   return (
-    <div className="main-projects ">
+    <div className="main-projects " ref={ref}>
       <h2>
         Principais <span>Projetos</span>
       </h2>
@@ -113,6 +113,6 @@ const MainProjects = () => {
       </Swiper>
     </div>
   );
-};
+});
 
 export default MainProjects;

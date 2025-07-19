@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "../App.css";
 import img from "../img/team.png";
-const Demoday = () => {
+const Demoday = forwardRef((props, ref) => {
   return (
-    <div className="container-demoday">
+    <div className="container-demoday" ref={ref}>
       <div className="enfeite">
         <div className="rectangle-border"></div>
         <div className="line"></div>
@@ -49,6 +49,6 @@ const Demoday = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Demoday;

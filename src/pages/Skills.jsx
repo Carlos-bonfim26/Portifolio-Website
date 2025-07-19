@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Skill from "../Components/Skill";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
@@ -12,9 +12,9 @@ import { TbBrandCSharp } from "react-icons/tb";
 import { GrMysql } from "react-icons/gr";
 import { FaGitAlt } from "react-icons/fa";
 
-const Skills = () => {
+const Skills = forwardRef((props, ref) => {
   return (
-    <div className="Skills">
+    <div className="Skills" ref={ref}>
       <h2>
         <span>Minhas</span> Skills
       </h2>
@@ -34,6 +34,6 @@ const Skills = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Skills;

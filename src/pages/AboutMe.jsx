@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { forwardRef, useEffect, useState } from 'react'
 import img from '../img/carlosbonfim.png'
 import imgResponsiva from '../img/PerfilCarlosBonfim.png'
+
 import './AboutMe.css'
-const AboutMe = () => {
+const AboutMe = forwardRef((props, ref) => {
 
   const [imageSrc, setImageSrc] = useState("");
 
@@ -25,7 +26,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div className='container-about'>
+    <div className='container-about' ref={ref}>
       <div className="img-about">
         
         <img src={imageSrc} alt="Carlos Bonfim" />
@@ -40,6 +41,6 @@ const AboutMe = () => {
       </div>
     </div>
   )
-}
+});
 
 export default AboutMe

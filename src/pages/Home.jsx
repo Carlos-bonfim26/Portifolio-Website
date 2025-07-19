@@ -1,14 +1,13 @@
 import React from "react";
-import Header from "../Components/Header";
 import { FaGithub } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
 
-Header;
+
 const Home = () => {
   return (
     <div>
-      <Header></Header>
+  
       <div className="container-home">
         <h1>Carlos Bonfim</h1>
         <h2>Web Developer</h2>
