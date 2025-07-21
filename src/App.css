@@ -206,8 +206,20 @@
 .container-contact .links a:nth-child(2) {
   font-size: 2.5rem;
 }
-.container-contact .links a:last-child {
+.container-contact .links a:nth-child(3) {
   font-size: 2.8rem;
+}
+.container-contact .links .button-cv button{
+width: 8rem;
+height: 2rem;
+background-color: var(--details1);
+color: var(--text-color);
+border: none;
+border-radius: 0.8rem;
+cursor: pointer;
+}
+.container-contact .links .button-cv button:hover{
+    box-shadow: 0rem 0rem 1rem 0rem rgba(255, 255, 255, 0.2);
 }
 .container-contact .links a {
   text-decoration: none;
@@ -274,7 +286,7 @@ footer .towers:last-child .rectangle-border:first-child{
   .container-contact .links a:nth-child(2) {
     font-size: 2.3rem;
   }
-  .container-contact .links a:last-child {
+  .container-contact .links a:nth-child(3) {
     font-size: 2.5rem;
   }
 }
@@ -297,7 +309,7 @@ footer .towers:last-child .rectangle-border:first-child{
   .container-contact .links a:nth-child(2) {
     font-size: 1.9rem;
   }
-  .container-contact .links a:last-child {
+  .container-contact .links a:nth-child(3) {
     font-size: 2.2rem;
   }
 }
@@ -333,7 +345,7 @@ footer .towers:last-child .rectangle-border:first-child{
   .container-contact .links a:nth-child(2) {
     font-size: 1.5rem;
   }
-  .container-contact .links a:last-child {
+  .container-contact .links a:nth-child(3) {
     font-size: 2rem;
   }
   footer .towers:first-child .rectangle-border:first-child{
