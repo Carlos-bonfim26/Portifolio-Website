@@ -3,10 +3,10 @@ import MainProject from "../Components/MainProject";
 import "../App.css";
 //image
 import saboriaImg from "../img/saboria.png";
-import compilotecaImg from "../img/compiloteca.png";
+import compilotecaImg from "../img/compiloteca2.png";
 import javaProject from "../img/projetoJava.png";
 import siteeducacional from "../img/siteeducacional.png";
-import geradorIA from "../img/geradorIA.jpeg";
+import geradorIA from "../img/geradorImgIA.png";
 import cardapioOnline from "../img/cardapioOnline.png";
 import quiz from "../img/quiz.png";
 import chatbot from "../img/chatbot.png";

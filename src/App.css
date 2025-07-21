@@ -168,6 +168,8 @@
 .main-projects h2 {
   text-align: center;
   margin-bottom: 2rem;
+  z-index: 1;
+  position: relative;
 }
 .swiper-slide:first-child {
   margin-left: 3rem;
@@ -306,6 +308,9 @@ footer .towers:last-child .rectangle-border:first-child{
    .container-contact img{
     display: none;
    }
+   .main-projects{
+    margin-top: 2.5rem;
+   }
 }
 @media (max-width: 500px) {
   .img-demoday img {
@@ -319,6 +324,7 @@ footer .towers:last-child .rectangle-border:first-child{
     height: 11rem;
   }
   .main-project {
+    margin-left: 1rem;
     width: 20rem;
   }
    .container-contact .links a:first-child {

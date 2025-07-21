@@ -13,24 +13,74 @@ import { GrMysql } from "react-icons/gr";
 import { FaGitAlt } from "react-icons/fa";
 
 const Skills = forwardRef((props, ref) => {
+  const habilidades = [
+    {
+      name: "HTML",
+      icon: <FaHtml5 />,
+      progress: 90,
+    },
+    {
+      name: "CSS",
+      icon: <FaCss3 />,
+      progress: 85,
+    },
+    {
+      name: "Javascript",
+      icon: <RiJavascriptFill />,
+      progress: 70,
+    },
+    {
+      name: "React",
+      icon: <FaReact />,
+      progress: 70,
+    },
+    {
+      name: "Bootstrap",
+      icon: <FaBootstrap />,
+      progress: 80,
+    },
+    {
+      name: "Figma",
+      icon: <CgFigma />,
+      progress: 70,
+    },
+    {
+      name: "Java",
+      icon: <FaJava />,
+      progress: 50,
+    },
+    {
+      name: "PHP",
+      icon: <SiPhp />,
+      progress: 50,
+    },
+    {
+      name: "C#",
+      icon: <TbBrandCSharp />,
+      progress: 30,
+    },
+    {
+      name: "MySQL",
+      icon: <GrMysql />,
+      progress: 65,
+    },
+    {
+      name: "Git e Github",
+      icon: <FaGitAlt />,
+      progress: 70,
+    },
+  ];
   return (
     <div className="Skills" ref={ref}>
       <h2>
         <span>Minhas</span> Skills
       </h2>
       <div className="container-skills">
-        <Skill name="HTML" icon={<FaHtml5 />} progress="90" />
-        <Skill name="CSS" icon={<FaCss3 />} progress="85" />
-        <Skill name="Javascript" icon={<RiJavascriptFill />} progress="70" />
-        <Skill name="React" icon={<FaReact />} progress="70" />
-        <Skill name="Bootstrap" icon={<FaBootstrap />} progress="80" />
-        <Skill name="Figma" icon={<CgFigma />} progress="70" />
-        <Skill name="Java" icon={<FaJava />} progress="50" />
-        <Skill name="PHP" icon={<SiPhp />} progress="50" />
-        <Skill name="C#" icon={<TbBrandCSharp />} progress="30" />
-        <Skill name="MySQL" icon={<GrMysql />} progress="65" />
-        <Skill name="Git e Github" icon={<FaGitAlt />
-} progress="70" />
+        {
+          habilidades.map((habilidade, index)=>{
+           return  <Skill key={index} {...habilidade}/>
+          })
+        }
       </div>
     </div>
   );
