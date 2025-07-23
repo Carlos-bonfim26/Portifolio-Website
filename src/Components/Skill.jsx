@@ -1,8 +1,9 @@
 import React from "react";
 import "../pages/Skills.css";
+import '../animation.css'
 const Skill = (props) => {
   return (
-    <div className="skill">
+    <div className="skill autoShow">
       <h3>{props.name}</h3>
       <div className="info-skill">
         {props.icon}

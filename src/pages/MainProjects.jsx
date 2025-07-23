@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import MainProject from "../Components/MainProject";
 import "../App.css";
+import '../animation.css'
 //image
 import saboriaImg from "../img/saboria.png";
 import compilotecaImg from "../img/compiloteca2.png";
@@ -80,7 +81,7 @@ const MainProjects = forwardRef((props, ref) => {
     },
   ];
   return (
-    <div className="main-projects " ref={ref}>
+    <div className="main-projects autoShow" ref={ref}>
       <h2>
         Principais <span>Projetos</span>
       </h2>

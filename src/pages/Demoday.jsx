@@ -1,9 +1,10 @@
 import React, { forwardRef } from "react";
 import "../App.css";
+import '../animation.css'
 import img from "../img/team.png";
 const Demoday = forwardRef((props, ref) => {
   return (
-    <div className="container-demoday" ref={ref}>
+    <div className="container-demoday autoShow" ref={ref}>
       <div className="enfeite">
         <div className="rectangle-border"></div>
         <div className="line"></div>
@@ -44,7 +45,7 @@ const Demoday = forwardRef((props, ref) => {
         </p>
       </div>
       <div className="img-demoday">
-        <img src={img} alt="time da Saboria" />
+        <img src={img} alt="time da Saboria" className="imageReveal" />
         <div className="rectangle-border"></div>
       </div>
     </div>

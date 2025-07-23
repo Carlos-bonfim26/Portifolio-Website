@@ -11,7 +11,7 @@ import { SiPhp } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 import { GrMysql } from "react-icons/gr";
 import { FaGitAlt } from "react-icons/fa";
-
+import '../animation.css'
 const Skills = forwardRef((props, ref) => {
   const habilidades = [
     {
@@ -72,7 +72,7 @@ const Skills = forwardRef((props, ref) => {
   ];
   return (
     <div className="Skills" ref={ref}>
-      <h2>
+      <h2 className="">
         <span>Minhas</span> Skills
       </h2>
       <div className="container-skills">

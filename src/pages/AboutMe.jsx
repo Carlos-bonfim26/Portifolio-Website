@@ -1,7 +1,7 @@
 import React, { forwardRef, useEffect, useState } from 'react'
 import img from '../img/carlosbonfim.png'
 import imgResponsiva from '../img/PerfilCarlosBonfim.png'
-
+import '../animation.css'
 import './AboutMe.css'
 const AboutMe = forwardRef((props, ref) => {
 
@@ -26,7 +26,7 @@ const AboutMe = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <div className='container-about' ref={ref}>
+    <div className='container-about autoShow' ref={ref}>
       <div className="img-about">
         
         <img src={imageSrc} alt="Carlos Bonfim" />
