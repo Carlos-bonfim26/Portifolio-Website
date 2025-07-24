@@ -1,6 +1,6 @@
 .autoShow {
   animation: text-appear both;
-  animation-timeline: view();
+  animation-timeline: view(50% auto);
   animation-range: entry 20% cover 100vh;
 }
 @keyframes text-appear {

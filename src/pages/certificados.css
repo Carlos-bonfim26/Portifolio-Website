@@ -1,0 +1,115 @@
+#certificados {
+    margin-top: 10%;
+     margin-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  color: var(--text-color);
+  font-family: "Audiowide", sans-serif;
+}
+.container-certificados {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-direction: column;
+  width: 100%;
+}
+#certificados  h2{
+    margin-bottom: 5%;
+}
+.certificado {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60rem;
+  height: fit-content;
+  align-items: center;
+  justify-items: center;
+}
+.certificado div {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.certificado .desc {
+    margin-left: 0.5rem;
+  flex-direction: column;
+}
+.line-purple {
+  width: 0.3rem;
+  transform: scaleY(1.2);
+  height: 120%;
+  position: absolute;
+  background-color: var(--details1);
+}
+.certificado .desc p{
+    width: 100%;
+    text-align: left;
+}
+.certificado .desc span {
+  color: var(--details1);
+  font-size: 3rem;
+}
+.certificado img {
+  width: 10rem;
+  height: auto;
+}
+/* animação */
+.certificado{
+animation: fadeUp both;
+animation-timeline:view() ;
+}
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(0.6rem) scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+        scale: 1;
+    }
+}
+
+/* responsividade */
+@media (max-width:996px){
+    .certificado{
+        width: 100%;
+    }
+    .line-purple{
+        height: 110%;
+    }
+}
+@media (max-width:550px){
+    .certificado .desc h3{
+        font-size: 1.2rem;
+    }
+    .certificado .desc span {
+        font-size: 2rem;
+    }
+    .certificado img{
+        width: 8rem;
+    }
+     .line-purple{
+        height: 90%;
+    }
+}
+@media (max-width:430px){
+     .certificado .desc h3{
+        font-size: 1rem;
+    }
+    .certificado .desc span {
+        font-size: 1.5rem;
+    }
+    .certificado img{
+        width: 7rem;
+    }
+     .line-purple{
+        height: 80%;
+    }
+}

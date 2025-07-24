@@ -8,6 +8,7 @@ import MainProjects from "./pages/MainProjects";
 import Contact from "./pages/Contact";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
+import Certificado from "./pages/Certificado";
 
 function App() {
   const sobreRef = useRef(null);
@@ -15,6 +16,7 @@ function App() {
   const projetosRef = useRef(null);
   const demodayRef = useRef(null);
   const contatoRef = useRef(null);
+  const certificadoRef = useRef(null)
 
   const scrollToSection = (ref) => {
     if (ref.current) {
@@ -30,10 +32,12 @@ function App() {
         onScrollToDemoday={() => scrollToSection(demodayRef)}
         onScrollToProjetos={() => scrollToSection(projetosRef)}
         onScrollToContato={() => scrollToSection(contatoRef)}
+        onScrollToCertificado={() => scrollToSection(certificadoRef)}
       />
       <Home />
       <AboutMe ref={sobreRef} />
       <Skills ref={habilidadesRef} />
+      <Certificado ref={certificadoRef}/>
       <Demoday ref={demodayRef} />
       <MainProjects ref={projetosRef} />
       <Contact ref={contatoRef} />

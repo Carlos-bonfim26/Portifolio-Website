@@ -8,6 +8,7 @@ const Header = ({
   onScrollToProjetos,
   onScrollToContato,
   onScrollToDemoday,
+  onScrollToCertificado,
 }) => {
   return (
     <div>
@@ -30,6 +31,9 @@ const Header = ({
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link onClick={onScrollToHabilidades}>Habilidades</Nav.Link>
+              </Nav.Item>
+               <Nav.Item>
+                <Nav.Link onClick={onScrollToCertificado}>Certificados</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link onClick={onScrollToDemoday}>Demoday</Nav.Link>
