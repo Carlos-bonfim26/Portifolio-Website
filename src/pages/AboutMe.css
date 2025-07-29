@@ -91,9 +91,11 @@
     align-items: center;
   }
   .img-about img{
-    width: 20rem;
-    height: 20rem;
-    border-radius: 100%;
+    aspect-ratio: 1/1;
+    width: 18rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
   }
   .img-about .border-rectangle{
      transform: translateY(-70%) translateX(-30%);
