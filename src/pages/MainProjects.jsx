@@ -7,6 +7,7 @@ import saboriaImg from "../img/saboria.png";
 import compilotecaImg from "../img/compiloteca2.png";
 import javaProject from "../img/projetoJava.png";
 import siteeducacional from "../img/siteeducacional.png";
+import desenho from '../img/desenho.png'
 import geradorIA from "../img/geradorImgIA.png";
 import cardapioOnline from "../img/cardapioOnline.png";
 import quiz from "../img/quiz.png";
@@ -78,6 +79,12 @@ const MainProjects = forwardRef((props, ref) => {
       img: siteeducacional,
       github: "https://github.com/Carlos-bonfim26/site-educacional",
       desc: "Aplicação sendo feita com HTML e CSS, Bootstrap e Swiper e tendo um design moderno e responsivo",
+    },
+      {
+      tittle:"Aplicativo de Desenho",
+      img: desenho,
+      github: "https://github.com/Carlos-bonfim26/Aplicativo-de-desenho",
+      desc: "Uma aplicação de desenhos feita com React JS e o canvas do HTML, utilizando os principais Hooks do React no projeto, UseState, UseEffect e UseRef.",
     },
   ];
   return (
