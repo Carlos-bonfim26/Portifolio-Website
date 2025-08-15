@@ -1,10 +1,10 @@
 import React, { forwardRef } from 'react'
 import contatoImg from '../img/contact.svg'
-import pdfCv from '../img/2025.07_curriculo_carlosbonfim.pdf'
+import pdfCv from '../pdf/curriculoCarlosBonfim2025.pdf'
 import '../animation.css'
 const Contact = forwardRef((props, ref) => {
   return (
-    <div className='contact autoShow' ref={ref}>
+    <div className='contact autoShow-contacts' ref={ref}>
       <h2>Entre em <span>contato</span></h2>
       <div className="container-contact">
         <div className="links ">
